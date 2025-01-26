@@ -202,14 +202,14 @@
     </style>
   </head>
 
-  <body id="moon">
+  <body class="moon">
     <div >
     <div id="togglemoon">
       <i class="bx bx-moon"></i>
     </div>
     <div class="calculator">
       <h1>Age <br /><span>calculator</span></h1>
-      <div class="inputbox">
+      <div class="inputbox moon">
         <input type="date" id="date" />
         <button class="primary-btn" id="calculator" onclick="calculateAge()">
           Calculate
@@ -265,7 +265,7 @@
         }
       });
 
-      const darkmode = document.getElementById("moon");
+      const darkmode = document.getElementByClassname("moon");
       const toggle = document.getElementById("togglemoon");
       const spans =document.getElementsByTagName('span');
       
